@@ -1,0 +1,305 @@
+div.body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.b-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.b-black {
+  background-color: rgb(0, 0, 0);
+}
+
+.sidebar-white {
+  background-color: rgb(246, 246, 246);
+}
+
+.sidebar-black {
+  background-color: rgb(12, 12, 12);
+}
+
+nav {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.offcanvas-white {
+  background-color: rgb(246, 246, 246);
+}
+
+.offcanvas-black {
+  background-color: rgb(12, 12, 12);
+}
+
+.offcanvas {
+  height: 100vh;
+
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+}
+
+/* --------------------------------------- Sidebar ------------------------------------------- */
+
+.new-chat {
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  width: 150px;
+  margin: 30px auto;
+  border-radius: 20px;
+  gap: 5px;
+}
+
+.nc-white {
+  background-color: rgb(224, 224, 224);
+}
+
+.nc-black {
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+.new-chat:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.n-chat {
+  font-size: 16px;
+}
+
+/* ------------------------------------- Search ---------------------------------------------=------------ */
+
+div.search {
+  position: absolute;
+  bottom: 30px;
+  left: 22vw;
+  height: 50px;
+  width: 70vw;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 25px;
+  z-index: 1;
+}
+
+.search-white {
+  background-color: rgb(224, 224, 224);
+}
+
+.search-black {
+  background-color: rgb(25, 25, 25);
+}
+
+input {
+  width: 95%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+button.submit {
+  border: none;
+  background-color: #c0c0c0;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+/* ------------------------------------------ Intro -------------------------------------------- */
+
+section {
+  margin: 30px 0px 0px 0px;
+  /* background-color: blueviolet; */
+  height: 80vh;
+  width: 100%;
+  padding: 0px 10px 70px 10px;
+  overflow-y: scroll;
+}
+
+.intro-heading {
+  color: #c0c0c0;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 0px 20px;
+
+}
+
+.h-color {
+  background-image: radial-gradient(red, purple, rgb(117, 25, 223), skyblue);
+  background-clip: text;
+  color: transparent;
+}
+
+div.intro-cards {
+  /* height: 110px; */
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+div.intro-card {
+  width: 150px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.card-white {
+  border: 2px solid rgb(209, 209, 209);
+  box-shadow: 0px 0px 10px 1px rgb(233, 233, 233);
+
+}
+
+.card-black {
+  box-shadow: 0px 0px 10px 1px rgb(83, 83, 83);
+  border: 2px solid rgb(95, 95, 95);
+
+}
+
+p.card-title {
+  margin: 10px 0px 0px 0px;
+}
+
+/* ------------------------------------------ Chat -------------------------------------------- */
+.question-section {
+  /* background-color: red; */
+  padding: 0px 10px;
+}
+
+.question {
+  /* background-color: #2e91be; */
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+p.ques-tion {
+  margin: 30px 0px;
+  display: inline;
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: 80%;
+}
+
+.q-white {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.q-black {
+  background-color: #222222;
+  color: white;
+}
+
+.answer {
+  padding: 10px 0px;
+  /* background-color: green; */
+  display: grid;
+  grid-template-columns: 1fr 25fr;
+  gap: 20px;
+}
+
+.symbol {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.symbol-white {
+  background-color: #fff;
+  border: 4px solid black;
+}
+
+.symbol-black {
+  color: white;
+  background-color: #000;
+  border: 4px solid rgb(255, 255, 255);
+
+}
+
+.ai-ans {
+  /* background-color: skyblue; */
+  padding: 7px 0px 0px 0px;
+  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+p.pa-ra {
+  padding: 0px 3px;
+  font-weight: 200;
+  text-align: start;
+}
+
+p.pa-raBold {
+  font-weight: 700;
+}
+
+p.newline {
+  width: 100%;
+  height: 35px;
+}
+
+.recent-box{
+  /* background-color: rgb(184, 184, 184); */
+  padding: 30px 20px;
+  height: 500px;
+  overflow-y: scroll;
+
+}
+
+h5.recent{
+  font-size: 25px;
+}
+
+div.questions-box {
+  /* background-color: red; */
+  width: 195px;
+  padding: 5px 7px;
+  border-radius: 7px;
+  white-space: nowrap; /* Prevent the text from wrapping */
+  overflow: hidden;    /* Hide the overflowed text */
+  text-overflow: ellipsis;
+}
+div.questions-box:hover{
+  background-color: #aaaaaa50;
+  cursor: pointer;
+}
+
+div.outer-box{
+  display: flex;
+  flex-direction: column-reverse;
+}
