@@ -132,7 +132,6 @@ button.submit {
 
 section {
   margin: 30px 0px 0px 0px;
-  /* background-color: blueviolet; */
   height: 80vh;
   width: 100%;
   padding: 0px 10px 70px 10px;
@@ -154,7 +153,6 @@ section {
 }
 
 div.intro-cards {
-  /* height: 110px; */
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -188,12 +186,10 @@ p.card-title {
 
 /* ------------------------------------------ Chat -------------------------------------------- */
 .question-section {
-  /* background-color: red; */
   padding: 0px 10px;
 }
 
 .question {
-  /* background-color: #2e91be; */
   display: flex;
   flex-direction: row-reverse;
 }
@@ -218,7 +214,6 @@ p.ques-tion {
 
 .answer {
   padding: 10px 0px;
-  /* background-color: green; */
   display: grid;
   grid-template-columns: 1fr 25fr;
   gap: 20px;
@@ -248,7 +243,6 @@ p.ques-tion {
 }
 
 .ai-ans {
-  /* background-color: skyblue; */
   padding: 7px 0px 0px 0px;
   font-size: 17px;
   display: flex;
@@ -274,7 +268,6 @@ p.newline {
 }
 
 .recent-box{
-  /* background-color: rgb(184, 184, 184); */
   padding: 30px 20px;
   height: 500px;
   overflow-y: scroll;
@@ -286,7 +279,6 @@ h5.recent{
 }
 
 div.questions-box {
-  /* background-color: red; */
   width: 195px;
   padding: 5px 7px;
   border-radius: 7px;
