@@ -42,23 +42,19 @@ function App() {
     setQuestion(prompt)
     setAns("...")
     let a = await run(prompt)
-    // console.log(a)
     setAns(a)
     addQuestion(prompt)
   }
 
   const handleInput = (value) => {
-    // console.log(value)
     setInput(value)
   }
   const submit = () => {
     onSent(input)
     setInput('')
-    // console.log("submit")
   }
   const introQuestion = (data) => {
     setInput(data)
-    // console.log(data)
   }
 
   const handleDarkmode = () => {
@@ -73,7 +69,12 @@ function App() {
   return (
     <>
       <div className={`body b-${darkmode ? "black" : 'white'}`}>
-        <Sidebar darkmode={darkmode} newChat={newChat} questionsArr={questionsArr} introQuestion={introQuestion} />
+        <Sidebar
+          darkmode={darkmode}
+          newChat={newChat}
+          questionsArr={questionsArr}
+          introQuestion={introQuestion}
+        />
         <Main
           darkmode={darkmode}
           handleDarkmode={handleDarkmode}
@@ -84,6 +85,8 @@ function App() {
           handleInput={handleInput}
           question={question}
           introQuestion={introQuestion}
+          newChat={newChat}
+          questionsArr={questionsArr}
         />
       </div>
     </>

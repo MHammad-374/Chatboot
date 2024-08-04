@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Sidebar from './Sidebar'
 import CloseIcon from '@mui/icons-material/Close';
 
-function Offcanvas({ darkmode }) {
+function Offcanvas({ darkmode, introQuestion, newChat, questionsArr }) {
     return (
         <>
             <a className="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -16,7 +16,7 @@ function Offcanvas({ darkmode }) {
                         <CloseIcon style={{ color: `${darkmode ? 'white' : 'black'}` }} />
                     </button>
                 </div>
-                {/* <Sidebar darkmode={darkmode} /> */}
+                <Sidebar darkmode={darkmode} newChat={newChat} questionsArr={questionsArr} introQuestion={introQuestion} />
             </div>
         </>
     )
