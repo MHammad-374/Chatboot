@@ -50,9 +50,12 @@ function App() {
     setInput(value)
   }
   const submit = () => {
-    onSent(input)
-    setInput('')
+    if (input !== '') {
+      onSent(input)
+      setInput('')
+    }
   }
+  
   const introQuestion = (data) => {
     setInput(data)
   }
@@ -65,6 +68,11 @@ function App() {
     setIntro(true)
   }
 
+  window.addEventListener('keydown', (k) => {
+    if (k.key === 'Enter') {
+      submit();
+    }
+  })
 
   return (
     <>
