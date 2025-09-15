@@ -70,7 +70,7 @@ function App() {
 
   window.addEventListener('keydown', (k) => {
     if (k.key === 'Enter') {
-      submit();
+      alert("Please click the submit button.");
     }
   })
 
