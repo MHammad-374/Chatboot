@@ -72,8 +72,8 @@ if (!window._enterListenerAdded) {
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       e.preventDefault(); // optional: stops form auto-submit
-      // alert("Please click the submit button.");
-      submit();
+      alert("Please click the submit button.");
+      // submit();
     }
   });
   window._enterListenerAdded = true;
