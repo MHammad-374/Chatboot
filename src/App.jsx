@@ -68,11 +68,21 @@ function App() {
     setIntro(true)
   }
 
-  window.addEventListener('keydown', (k) => {
-    if (k.key === 'Enter') {
+if (!window._enterListenerAdded) {
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); // optional: stops form auto-submit
       alert("Please click the submit button.");
     }
-  })
+  });
+  window._enterListenerAdded = true;
+}
+  
+  // window.addEventListener('keydown', (k) => {
+  //   if (k.key === 'Enter') {
+  //     alert("Please click the submit button.");
+  //   }
+  // })
 
   return (
     <>
